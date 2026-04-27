@@ -1,15 +1,19 @@
-You plan to implement an Azure Functions app in either C# script or Python. The app will connect to an Azure SQL database.
+Your team is developing a C# application that manages containers in an Azure Storage account by using the Azure.Storage.Blobs .NET client library.
 
-You need to specify the database connection string for the app when running it in Azure.
+The application must follow security policy that prohibits storing secrets such as connection strings or account keys in code.
 
-Where should you store the value of the connection string?
+You need to authenticate by using Microsoft Entra ID and create a client that can list, create, and delete containers at the account level.
 
-Select only one answer.
+Which two actions should you perform? Each correct answer presents part of the solution. Choose two.
 
-host.json
+Select all answers that apply.
 
-function.json
+Instantiate a BlobContainerClient.
 
-local.settings.json
+Create a BlobClient from the account URL.
 
-Application Settings
+Instantiate a BlobServiceClient with the account URL and DefaultAzureCredential.
+
+Assign the Entra ID identity of the application an Azure RBAC role that grants access to blob data.
+
+Enable anonymous public read access on the container so authentication is not required.
