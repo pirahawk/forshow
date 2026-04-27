@@ -1,15 +1,17 @@
-You are developing two containers to deploy to Azure Container Instances (ACI).
+You plan to demonstrate the functionality of Azure Functions apps by using different programming and scripting languages.
 
-You need to ensure that the containers share a lifecycle, resources, local network, and storage volumes.
+You need to select the languages that require the use of external editors for app development.
 
-What should you use?
+Which two languages should you use? Each correct answer presents a complete solution.
 
-Select only one answer.
+Select all answers that apply.
 
-YAML file
+C#
 
-Container group
+C# script
 
-Virtual network
+Java
 
-Environment variable
+PowerShell
+
+Python
