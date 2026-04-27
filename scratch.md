@@ -1,19 +1,15 @@
-You plan to create a solution by using Azure Container Apps. The solution will consist of multiple container apps.
+You have an Azure Container Apps application named App1. App1 uses an environment named App1Env1, has a revision named App1Rev1, and contains a container named Container1.
 
-You are assessing whether you should create multiple environments.
+You need to create a secret whose value will be available to the code running in App1.
 
-You need to identify criteria that will require the creation of multiple environments.
+What should you configure?
 
-Which two criteria should you identify? Each correct answer presents a complete solution.
+Select only one answer.
 
-Select all answers that apply.
+App1
 
-Each container app must maintain its own versioning.
+App1Env1
 
-Each container app must support different upgrade cadency.
+App1Rev1
 
-Each container app must be able to scale independently of others.
-
-Each container app must be deployed to a different virtual network.
-
-Each container app must write its logs to a different Log Analytics workspace.
+Container1
