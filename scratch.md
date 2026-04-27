@@ -1,15 +1,17 @@
-A .NET API stores multi-tenant order data in Azure Cosmos DB for NoSQL. In some new environments, the database and container may not exist.
+A background worker initializes a new environment for an existing Azure Cosmos DB for NoSQL database named telemetry. The environment may or may not have the required container.
 
-Startup must initialize these resources in an idempotent way so that repeated runs do not fail.
+Initialization must be idempotent so that repeated runs do not throw errors.
 
-You need to create the database and a container with partition key /tenantId and provision 400 request units per second (RU/s) on the container by using code.
+You need to create a container named logs with partition key path /deviceId by using code.
 
 Which method should you call?
 
 Select only one answer.
 
-CosmosClient.CreateDatabaseIfNotExistsAsync("appDb", throughput: 400)followed bydatabase.CreateContainerIfNotExistsAsync("orders", "/tenantId")
+database.GetContainer("logs").ReadContainerAsync()
 
-CosmosClient.CreateDatabaseAsync("appDb")followed bydatabase.CreateContainerAsync("orders", "/tenantId", throughput: 400)
+database.CreateContainerAsync(id: "logs", partitionKeyPath: "/deviceId")
 
-CosmosClient.CreateDatabaseIfNotExistsAsync("appDb")followed bydatabase.CreateContainerIfNotExistsAsync("orders", "/tenantId", throughput: 400)
+database.CreateContainerIfNotExistsAsync(id: "logs", partitionKeyPath: "/deviceId")
+
+CosmosClient.CreateContainerIfNotExistsAsync(id: "logs", partitionKeyPath: "/deviceId")
