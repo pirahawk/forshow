@@ -1,15 +1,13 @@
-You create a custom image and publish the image to Azure Container Registry.
+You need to publish a container image to Azure Container Registry.
 
-You need to build images automatically when teammates commit code to a private Git repository in GitHub.
-
-What should you use?
+Which tool or interface should you use?
 
 Select only one answer.
 
-ACR Tasks
+Microsoft Artifact Registry portal
 
-OCI image
+Azure Cloud Shell in the Azure portal
 
-Helm charts
+Azure Container Registry Tasks page in the Azure portal
 
-YAML manifest
+Azure Container Registry Repositories page in the Azure portal
