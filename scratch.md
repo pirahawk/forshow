@@ -1,13 +1,15 @@
-You need to publish a container image to Azure Container Registry.
+You are developing two containers to deploy to Azure Container Instances (ACI).
 
-Which tool or interface should you use?
+You need to ensure that the containers share a lifecycle, resources, local network, and storage volumes.
+
+What should you use?
 
 Select only one answer.
 
-Microsoft Artifact Registry portal
+YAML file
 
-Azure Cloud Shell in the Azure portal
+Container group
 
-Azure Container Registry Tasks page in the Azure portal
+Virtual network
 
-Azure Container Registry Repositories page in the Azure portal
+Environment variable
