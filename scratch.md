@@ -1,19 +1,17 @@
-Your team is developing a C# application that manages containers in an Azure Storage account by using the Azure.Storage.Blobs .NET client library.
+You are writing an application to store data in a storage account.
 
-The application must follow security policy that prohibits storing secrets such as connection strings or account keys in code.
+You must set metadata on a container by using the SetMetadata method of the BlobContainerClient class. The metadata values contain non-ASCII characters.
 
-You need to authenticate by using Microsoft Entra ID and create a client that can list, create, and delete containers at the account level.
+You need to set the values without any data loss.
 
-Which two actions should you perform? Each correct answer presents part of the solution. Choose two.
+What should you do?
 
-Select all answers that apply.
+Select only one answer.
 
-Instantiate a BlobContainerClient.
+Remove the non-ASCII characters.
 
-Create a BlobClient from the account URL.
+Use Base64 encoding for the metadata values.
 
-Instantiate a BlobServiceClient with the account URL and DefaultAzureCredential.
+Use binary encoding for the metadata values.
 
-Assign the Entra ID identity of the application an Azure RBAC role that grants access to blob data.
-
-Enable anonymous public read access on the container so authentication is not required.
+Ensure that the non-ASCII characters are using the UTF-16 format.
