@@ -1,17 +1,17 @@
-You are writing an application to store data in a storage account.
+An operations team plans to tag a container that has two name–value pairs. After tagging the container, the team must verify the pairs during startup logging by using the Azure Storage .NET client library and a BlobContainerClient for the target container.
 
-You must set metadata on a container by using the SetMetadata method of the BlobContainerClient class. The metadata values contain non-ASCII characters.
+You need to update the container metadata and then read it back for logging.
 
-You need to set the values without any data loss.
+Which two methods should you use? Each correct answer presents part of the solution. Choose two.
 
-What should you do?
+Select all answers that apply.
 
-Select only one answer.
+BlobClient.DownloadToAsync
 
-Remove the non-ASCII characters.
+BlobContainerClient.GetBlobsAsync
 
-Use Base64 encoding for the metadata values.
+BlobServiceClient.SetPropertiesAsync
 
-Use binary encoding for the metadata values.
+BlobContainerClient.SetMetadataAsync
 
-Ensure that the non-ASCII characters are using the UTF-16 format.
+BlobContainerClient.GetPropertiesAsync
