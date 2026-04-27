@@ -1,19 +1,17 @@
-You are configuring an Azure Cosmos DB container by using the .NET SDK.
+A retail company uses Azure Cosmos DB to store customer order data.
 
-The solution must minimize latency for read operations while ensuring a consistent view of data, in the context of a user, across multiple regions.
+The company must be able to process order updates in near–real time and trigger downstream actions, such as sending confirmation emails or updating a reporting system.
 
-You need to configure the appropriate consistency level when creating the CosmosClient.
+You need to configure a mechanism that responds to changes in the container data.
 
-Which consistency level should you configure?
+What should you do to implement the solution?
 
 Select only one answer.
 
-Strong
+Configure a user-defined function to capture change events.
 
-Session
+Use a stored procedure to automatically capture item updates.
 
-Eventual
+Enable a trigger to monitor and process item changes in the container.
 
-Consistent prefix
-
-Bounded staleness
+Use Azure Functions with the Cosmos DB trigger to automatically process the change feed.
