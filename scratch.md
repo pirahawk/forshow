@@ -1,17 +1,15 @@
-A retail company uses Azure Cosmos DB to store customer order data.
+A .NET API stores multi-tenant order data in Azure Cosmos DB for NoSQL. In some new environments, the database and container may not exist.
 
-The company must be able to process order updates in near–real time and trigger downstream actions, such as sending confirmation emails or updating a reporting system.
+Startup must initialize these resources in an idempotent way so that repeated runs do not fail.
 
-You need to configure a mechanism that responds to changes in the container data.
+You need to create the database and a container with partition key /tenantId and provision 400 request units per second (RU/s) on the container by using code.
 
-What should you do to implement the solution?
+Which method should you call?
 
 Select only one answer.
 
-Configure a user-defined function to capture change events.
+CosmosClient.CreateDatabaseIfNotExistsAsync("appDb", throughput: 400)followed bydatabase.CreateContainerIfNotExistsAsync("orders", "/tenantId")
 
-Use a stored procedure to automatically capture item updates.
+CosmosClient.CreateDatabaseAsync("appDb")followed bydatabase.CreateContainerAsync("orders", "/tenantId", throughput: 400)
 
-Enable a trigger to monitor and process item changes in the container.
-
-Use Azure Functions with the Cosmos DB trigger to automatically process the change feed.
+CosmosClient.CreateDatabaseIfNotExistsAsync("appDb")followed bydatabase.CreateContainerIfNotExistsAsync("orders", "/tenantId", throughput: 400)
