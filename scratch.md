@@ -1,17 +1,19 @@
-You plan to create a solution by using Azure Container Apps in a newly provisioned Azure subscription.
+You plan to create a solution by using Azure Container Apps. The solution will consist of multiple container apps.
 
-You need to ensure that you can deploy Azure Container Apps by using Azure CLI.
+You are assessing whether you should create multiple environments.
 
-Which two Azure resource providers must you register first? Each correct answer presents part of the solution.
+You need to identify criteria that will require the creation of multiple environments.
+
+Which two criteria should you identify? Each correct answer presents a complete solution.
 
 Select all answers that apply.
 
-Microsoft.App
+Each container app must maintain its own versioning.
 
-Microsoft.AppPlatform
+Each container app must support different upgrade cadency.
 
-Microsoft.AppConfiguration
+Each container app must be able to scale independently of others.
 
-Microsoft.ContainerService
+Each container app must be deployed to a different virtual network.
 
-Microsoft.OperationalInsights
+Each container app must write its logs to a different Log Analytics workspace.
