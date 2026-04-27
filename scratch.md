@@ -1,15 +1,15 @@
-You have an Azure Container Apps application named App1. App1 uses an environment named App1Env1, has a revision named App1Rev1, and contains a container named Container1.
+You create a custom image and publish the image to Azure Container Registry.
 
-You need to create a secret whose value will be available to the code running in App1.
+You need to build images automatically when teammates commit code to a private Git repository in GitHub.
 
-What should you configure?
+What should you use?
 
 Select only one answer.
 
-App1
+ACR Tasks
 
-App1Env1
+OCI image
 
-App1Rev1
+Helm charts
 
-Container1
+YAML manifest
