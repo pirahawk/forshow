@@ -1,17 +1,19 @@
-An operations team plans to tag a container that has two name–value pairs. After tagging the container, the team must verify the pairs during startup logging by using the Azure Storage .NET client library and a BlobContainerClient for the target container.
+You are configuring an Azure Cosmos DB container by using the .NET SDK.
 
-You need to update the container metadata and then read it back for logging.
+The solution must minimize latency for read operations while ensuring a consistent view of data, in the context of a user, across multiple regions.
 
-Which two methods should you use? Each correct answer presents part of the solution. Choose two.
+You need to configure the appropriate consistency level when creating the CosmosClient.
 
-Select all answers that apply.
+Which consistency level should you configure?
 
-BlobClient.DownloadToAsync
+Select only one answer.
 
-BlobContainerClient.GetBlobsAsync
+Strong
 
-BlobServiceClient.SetPropertiesAsync
+Session
 
-BlobContainerClient.SetMetadataAsync
+Eventual
 
-BlobContainerClient.GetPropertiesAsync
+Consistent prefix
+
+Bounded staleness
