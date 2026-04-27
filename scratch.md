@@ -1,15 +1,15 @@
-You plan to implement an Azure Functions app that will use an identity-based connection to connect to an Azure SQL database.
+You plan to implement an Azure Functions app in either C# script or Python. The app will connect to an Azure SQL database.
 
-You need to configure the identifying information that is used to authenticate the connection when the app is running in Azure.
+You need to specify the database connection string for the app when running it in Azure.
 
-Which identity type should you use?
+Where should you store the value of the connection string?
 
 Select only one answer.
 
-certificate
+host.json
 
-user account
+function.json
 
-service principal
+local.settings.json
 
-managed identity
+Application Settings
