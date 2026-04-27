@@ -1,17 +1,15 @@
-You plan to demonstrate the functionality of Azure Functions apps by using different programming and scripting languages.
+You plan to implement an Azure Functions app that will use an identity-based connection to connect to an Azure SQL database.
 
-You need to select the languages that require the use of external editors for app development.
+You need to configure the identifying information that is used to authenticate the connection when the app is running in Azure.
 
-Which two languages should you use? Each correct answer presents a complete solution.
+Which identity type should you use?
 
-Select all answers that apply.
+Select only one answer.
 
-C#
+certificate
 
-C# script
+user account
 
-Java
+service principal
 
-PowerShell
-
-Python
+managed identity
